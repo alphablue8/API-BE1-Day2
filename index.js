@@ -4,12 +4,6 @@ const https = require('https');
 const app = express();
 app.use(express.json());
 
-// Root
-app.get('/', (req, res) => {
-    res.send('Welcome to the Pokémon API');
-});
-
-
 // GET (pakai get data dari pokemon api  https://pokeapi.co/)
 app.get('/pokemon/:id', (req, res) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${req.params.id}`;
