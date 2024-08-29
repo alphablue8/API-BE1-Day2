@@ -27,7 +27,7 @@ app.get('/pokemon/:id', (req, res) => {
 // POST (insert pokemon, lalu mengembalikan print json insert pokemon)
 app.post('/pokemon', (req, res) => {
     const newPokemon = req.body;
-
+    
     res.status(201).json(newPokemon);
 });
 
